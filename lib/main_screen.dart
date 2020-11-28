@@ -67,6 +67,8 @@ class _MainScreenState extends State<MainScreen> {
     setState(() {
       selectedTab = index;
     });
+    if(index!=0 || index!=2)
+      return;
     _pageController.animateToPage(
       index,
       duration: Duration(milliseconds: 150),
@@ -142,7 +144,7 @@ class _MainScreenState extends State<MainScreen> {
     ));
     list.add(BottomNavigationBarItem(
       icon: new Icon(FontAwesomeIcons.userFriends, size: 20),
-      title: new Text('Network'),
+      title: new Text('Classes'),
     ));
     list.add(BottomNavigationBarItem(
         icon: Icon(
@@ -156,7 +158,7 @@ class _MainScreenState extends State<MainScreen> {
     ));
     list.add(BottomNavigationBarItem(
       icon: new Icon(FontAwesomeIcons.briefcase, size: 20),
-      title: new Text('Jobs'),
+      title: new Text('Groups'),
     ));
 
     return list;

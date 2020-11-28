@@ -23,10 +23,10 @@ class CompanyPost extends StatelessWidget {
       padding: this.padding ?? EdgeInsets.all(0),
       margin: this.margin ?? EdgeInsets.all(0),
       title: CompanyShortDescription(
-        companyID: post.owner,
+        companyID: post.owner,//'Pavi Saraswat',//:'Pooja Deswal',//post.owner,
       ),
       descrtiption: PostTextDescription(
-        description: post.description,
+        description: 'KEC - Post Data here',//post.description,
       ),
       content: PostImageDescription(
         url: post.content,

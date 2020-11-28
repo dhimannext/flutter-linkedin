@@ -19,11 +19,11 @@ class CompanyShortDescription extends StatelessWidget {
         width: 50,
         height: 40,
         child: Image.network(
-          company.imageUrl,
+          'https://image3.mouthshut.com/images/imagesp/925718280s.png',//company.imageUrl,
           fit: BoxFit.fill,
         ),
       ),
-      title: Text(company.name),
+      title: Text(DateTime.now().millisecondsSinceEpoch%2==0?'Pavi Saraswat':'Pooja Deswal'),
       subtitle: Text("${company.followers} followers"),
     );
   }
